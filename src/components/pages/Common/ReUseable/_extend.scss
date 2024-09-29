@@ -1,0 +1,134 @@
+%ex_s {
+    font-family: "Manrope", sans-serif;
+    font-size: 0.6rem; //11px
+    font-weight: 500;
+  }
+    
+  %ex_s_b {
+    font-family: "Manrope", sans-serif;
+    font-size: 0.6rem;
+    font-weight: 700;
+  }
+  
+  %s {
+    font-family: "Manrope", sans-serif;
+    font-size: 0.75rem; //12px
+    font-weight: 500;
+  }
+  
+  %s_b {
+    font-family: "Manrope", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+  
+  %sm {
+    font-family: "Manrope", sans-serif;
+    font-size: 0.9rem; //14px
+    font-weight: 500;
+  }
+  
+  %sm_b {
+    font-family: "Manrope", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+  
+  %m {
+    font-family: "Manrope", sans-serif;
+    font-size: 1rem; //16px
+    font-weight: 500;
+  }
+  %m_b {
+    font-family: "Manrope", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  
+  %sl {
+    font-family: "Manrope", sans-serif;
+    font-size: 1.125rem; //18px
+    font-weight: 500;
+  }
+  %sl_b {
+    font-family: "Manrope", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+  
+  %ml {
+    font-family: "Manrope", sans-serif;
+    font-size: 1.25rem; //20px
+    font-weight: 500;
+  }
+  
+  %ml_b {
+    font-family: "Manrope", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  
+  %ls {
+    font-family: "Manrope", sans-serif;
+    font-size: 1.5rem; //24px
+    font-weight: 500;
+  }
+  %ls_b {
+    font-family: "Manrope", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  %l {
+    font-family: "Manrope", sans-serif;
+    font-size: 2rem; //32px
+    font-weight: 500;
+  }
+  %l_b {
+    font-family: "Manrope", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  %lm {
+    font-family: "Manrope", sans-serif;
+    font-size: 2.125rem; //36px
+    font-weight: 500;
+  }
+  
+  %lm_b {
+    font-family: "Manrope", sans-serif;
+    font-size: 2.125rem; //36px
+    font-weight: 700;
+  }
+  
+  %xl {
+    font-family: "Manrope", sans-serif;
+    font-size: 2.25rem; //36px
+    font-weight: 500;
+  }
+  
+  %xl_b {
+    font-family: "Manrope", sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
+  
+  %extra {
+    font-family: "Manrope", sans-serif;
+    font-size: 4.50rem;
+    font-weight: 700;
+  }
+  
+  %extra_b {
+    font-family: "Manrope", sans-serif;
+    font-size: 4.50rem;
+    font-weight: 700;
+  }
+
+// ----------------- for text overflow -----------------
+%text_overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

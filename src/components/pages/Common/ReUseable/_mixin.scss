@@ -1,0 +1,12 @@
+// -----------devices--------
+@mixin mobile {
+    @media  screen and (max-width: 991px) {
+        @content
+    }
+};
+
+@mixin desktop {
+    @media screen and (min-width: 992px) {
+        @content
+    }
+};

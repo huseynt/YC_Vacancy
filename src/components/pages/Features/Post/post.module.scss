@@ -1,0 +1,348 @@
+@import '../../Common/ReUseable/mixin';
+@import '../../Common/ReUseable/extend';
+  
+.post {
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  box-sizing: border-box;
+  position: relative;
+  // background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+
+  @include mobile {
+    height: 100svh;
+  }
+
+    &_content {
+      width: 100%;
+      height: 100%;
+      padding: 8px;
+
+      &_main {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        border: 1px solid #b6b6b6;
+        border-radius: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+        @include mobile {
+          flex-direction: column;
+        }
+
+        &_card {
+          width: 100%;
+          height: 100%;
+          background-color: #fde0cd;
+          border-radius: 15px;
+          padding: 15px 15px 8px 15px;
+          display: flex;
+          flex-direction: column;
+          row-gap: 13px;
+          
+          @include desktop {
+            justify-content: space-between;
+          }
+
+          &_up {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &_date {
+              padding: 6px 12px;
+              border-radius: 15px;
+              background-color: #fff;
+              @extend %sl_b;
+            }
+            &_like {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background-color: #fff;
+              display: grid;
+              place-items: center;
+              transition: background-color 0.3s;
+
+              @include desktop {
+                &:hover {
+                  background-color: #386dff;
+                  cursor: pointer;
+                  svg {
+                    path {
+                      fill: #fff;
+                    }
+                  }
+                }
+              }
+
+              &:active {
+                background-color: #386dff;
+                svg {
+                  path {
+                    fill: #fff;
+                  }
+                }
+              }
+
+              &_svg {
+                width: 26px;
+                height: 26px;
+              }
+            }
+          }
+
+          
+
+          &_job {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &_company {
+              width: 100%;
+              @extend %sl_b;
+            }
+            &_down {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              &_name {
+                @extend %lm_b;
+                line-height: 40px;
+              }
+
+              &_photo {
+                width: 70px;
+                min-width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background-color: #daecfc;
+                border: 1px solid #b6b6b6;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  border-radius: 50%;
+                }
+              }
+            }
+          }
+
+          &_tags {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 8px;
+            row-gap: 5px;
+
+
+            &_item {
+              padding: 6px 10px;
+              border-radius: 18px;
+              border: 1px solid #979797;
+              @extend %m_b;
+            }
+          }
+
+          &_description {
+            width: 100%;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 3px;
+            justify-content: space-between;
+
+            @include mobile {
+              height: 100%;
+            }
+
+            &_text {
+              @extend %s;
+            }
+
+            &_report {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              row-gap: 6px;
+
+              &_up {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &_view {
+                  height: 30px;
+                  border-radius: 10px;
+                  // background-color: #fff;
+                  border: 1px solid #b6b6b6;
+                  padding: 7px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  column-gap: 5px;
+
+                  @extend %sm_b;
+                  transition: all 0.3s;
+                  
+                  &_svg {
+                    width: 20px;
+                    height: 20px;
+                    path {
+                      fill: #000;
+                    }
+                  }
+                }
+  
+                &_like {
+                  height: 40px;
+                  border-radius: 20px;
+                  background-color: #fff;
+                  padding: 7px 10px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  column-gap: 5px;
+
+                  @include desktop {
+                    &:hover {
+                      background-color: #ff4545;
+                      cursor: pointer;
+                      svg {
+                        path {
+                          fill: #fff;
+                        }
+                      }
+                      div {
+                        color: #fff;
+                      }
+                    }
+                  }
+
+                  &:active {
+                    background-color: #ff4545;
+                    svg {
+                      path {
+                        fill: #fff;
+                      }
+                    }
+                    div {
+                      color: #fff;
+                    }
+                  }
+                  
+                  &_svg {
+                    width: 26px;
+                    height: 26px;
+                  }
+                }
+              }
+
+              &_down {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &_slide {
+                  @extend %s_b;
+                  padding: 0 15px;
+                }
+  
+                &_id {
+                  @extend %ex_s;
+                  background-color: #fff;
+                  padding: 1px 5px;
+                  border-radius: 5px;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+
+        &_request {
+          width: 100%;
+          height: 100px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          row-gap: 100px;
+
+          @include mobile {
+            flex-direction: row;
+            row-gap: 0;
+          }
+
+          &_detail {
+            display: flex;
+            flex-direction: column;
+
+            @include desktop {
+              width: 80%;
+              flex-direction: row;
+              justify-content: space-between;
+            }
+            
+            &_salary {
+              @extend %ml_b;
+              @include desktop {
+                font-size: 1.7rem; 
+              }
+            }
+
+            &_location {
+              @extend %sm;
+            }
+          }
+  
+          &_mail {
+            min-width: 164.828px;
+            height: 44px;
+            padding: 6px 18px;
+            border-radius: 25px;
+            background-color: #000;
+            color: #fff;
+            @extend %ls;
+            transition: background-color 0.8s;
+            line-height: 33px;
+            text-align: center;
+            cursor: pointer;
+
+            @include desktop {
+              width: 80%;
+              font-size: 1.7rem;
+              text-align: center;
+              &:hover {
+                background-color: #386dff;
+              }
+            }
+
+            &:active {
+              background-color: #386dff;
+            }
+          }
+        }
+      }
+
+      
+    }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .post {
+    animation: fadeIn 0.5s ease-in-out;
+  }
